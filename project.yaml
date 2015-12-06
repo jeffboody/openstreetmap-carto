@@ -45,7 +45,6 @@ Stylesheet:
   - "power.mss"
   - "citywalls.mss"
   - "placenames.mss"
-  - "buildings.mss"
   - "stations.mss"
   - "amenity-points.mss"
   - "ferry-routes.mss"
@@ -439,49 +438,6 @@ Layer:
           FROM planet_osm_polygon
           WHERE man_made = 'bridge'
         ) AS bridge
-    properties:
-      minzoom: 12
-    advanced: {}
-  - id: "buildings"
-    name: "buildings"
-    class: ""
-    geometry: "polygon"
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way,
-            building
-          FROM planet_osm_polygon
-          WHERE building IS NOT NULL
-            AND building != 'no'
-            AND way_area > 0.01*!pixel_width!::real*!pixel_height!::real
-          ORDER BY z_order, way_area DESC
-        ) AS buildings
-    properties:
-      minzoom: 12
-    advanced: {}
-  - id: "buildings-major"
-    name: "buildings-major"
-    class: ""
-    geometry: "polygon"
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way,
-            building,
-            amenity,
-            aeroway
-          FROM planet_osm_polygon
-          WHERE building IS NOT NULL
-            AND building != 'no'
-            AND (aeroway = 'terminal' OR amenity = 'place_of_worship')
-            AND way_area > 0.01*!pixel_width!::real*!pixel_height!::real
-          ORDER BY z_order, way_area DESC)
-        AS buildings_major
     properties:
       minzoom: 12
     advanced: {}
