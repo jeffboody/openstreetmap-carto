@@ -13,13 +13,13 @@
 
 #world {
   [zoom >= 0][zoom < 10] {
-    polygon-fill: @land-color;
+    polygon-fill: transparent;
   }
 }
 
 #coast-poly {
   [zoom >= 10] {
-    polygon-fill: @land-color;
+    polygon-fill: transparent;
   }
 }
 
