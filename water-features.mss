@@ -125,7 +125,7 @@
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       text-fill: #222;
-      text-size: 10;
+      text-size: 20;
       text-face-name: @book-fonts;
       #text-poly {
         text-placement: interior;
@@ -151,7 +151,7 @@
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       text-fill: #222;
-      text-size: 10;
+      text-size: 20;
       text-face-name: @book-fonts;
       #text-poly {
         text-placement: interior;

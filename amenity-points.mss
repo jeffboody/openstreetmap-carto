@@ -10,9 +10,9 @@
 @man-made-icon: #555;
 @landform-color: #d08f55;
 
-@landcover-font-size: 10;
-@landcover-font-size-big: 12;
-@landcover-font-size-bigger: 15;
+@landcover-font-size: 20;
+@landcover-font-size-big: 24;
+@landcover-font-size-bigger: 30;
 @landcover-wrap-width-size: 25;
 @landcover-wrap-width-size-big: 35;
 @landcover-wrap-width-size-bigger: 45;
@@ -1102,9 +1102,9 @@
   [feature = 'place_islet'][zoom >= 17][way_pixels < 800000] {
     text-name: "[name]";
     text-fill: #000;
-    text-size: 10;
-    [way_pixels > 12000] { text-size: 12; }
-    [way_pixels > 48000] { text-size: 15; }
+    text-size: 20;
+    [way_pixels > 12000] { text-size: 24; }
+    [way_pixels > 48000] { text-size: 30; }
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
     text-halo-fill: rgba(255,255,255,0.6);
@@ -1124,7 +1124,7 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-fill: @amenity-brown;
-      text-size: 10;
+      text-size: 20;
       text-dy: 11;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
@@ -1148,7 +1148,7 @@
   [feature = 'amenity_cinema'] {
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 20;
       text-fill: @amenity-brown;
       text-dy: 13;
       text-face-name: @bold-fonts;
@@ -1169,7 +1169,7 @@
   [feature = 'amenity_bicycle_rental'][zoom >= 17],
   [feature = 'leisure_slipway'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: @transportation-text;
     [feature = 'amenity_car_rental']     { text-dy: 10; }
     [feature = 'amenity_bicycle_rental'] { text-dy: 10; }
@@ -1185,7 +1185,7 @@
   [feature = 'amenity_bicycle_parking'][zoom >= 10][way_pixels > 900],
   [feature = 'amenity_motorcycle_parking'][zoom >= 10][way_pixels > 900] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: @transportation-text;
     text-dy: 9;
     text-face-name: @book-fonts;
@@ -1212,7 +1212,7 @@
   [feature = 'leisure_picnic_table'][zoom >= 17],
   [feature = 'amenity_post_office'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: @amenity-brown;
     text-dy: 10;
     [feature = 'amenity_police'] { text-dy: 11; }
@@ -1227,7 +1227,7 @@
 
   [feature = 'amenity_place_of_worship'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: #000033;
     text-dy: 12;
     text-face-name: @book-fonts;
@@ -1242,7 +1242,7 @@
   [feature = 'natural_saddle'][zoom >= 15],
   [feature = 'tourism_viewpoint'][zoom >= 16] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: darken(@landform-color, 30%);
     [feature = 'natural_volcano'] { text-fill: #d40000; }
     text-dy: 7;
@@ -1260,7 +1260,7 @@
   [feature = 'man_made_mast'][zoom >= 17],
   [feature = 'man_made_water_tower'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: black;
     [feature = 'natural_cave_entrance'],
     [feature = 'man_made_water_tower'] {
@@ -1282,7 +1282,7 @@
   [feature = 'historic_monument'][zoom >= 16],
   [feature = 'historic_archaeological_site'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: @amenity-brown;
     text-dy: 11;
     text-face-name: @book-fonts;
@@ -1295,7 +1295,7 @@
   [feature = 'leisure_miniature_golf'][zoom >= 17],
   [feature = 'leisure_golf_course'][zoom >= 15] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: 22;
     text-fill: darken(@park, 60%);
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -1311,7 +1311,7 @@
     [way_area >= 20000][zoom >= 16],
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 11;
+      text-size: 22;
       text-fill: darken(@park, 60%);
       text-dy: 11;
       text-face-name: @book-fonts;
@@ -1350,7 +1350,7 @@
     [way_area >= 20000][zoom >= 16],
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 11;
+      text-size: 22;
       text-dy: 13;
       text-fill: darken(@park, 60%);
       text-face-name: @book-fonts;
@@ -1613,7 +1613,7 @@
   [feature = 'natural_bay'][zoom >= 14],
   [feature = 'natural_spring'][zoom >= 16] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: @water-text;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -1631,7 +1631,7 @@
     [feature = 'amenity_atm'] {
       text-name: "[operator]";
     }
-    text-size: 10;
+    text-size: 20;
     [feature = 'amenity_bank'] { text-dy: 9; }
     [feature = 'amenity_atm']  { text-dy: 10; }
     text-fill: @amenity-brown;
@@ -1651,7 +1651,7 @@
   [feature = 'tourism_guest_house'][zoom >= 17],
   [feature = 'tourism_camp_site'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: #0066ff;
     text-dy: 11;
     text-face-name: @book-fonts;
@@ -1669,7 +1669,7 @@
 
   [feature = 'amenity_embassy'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: #0066ff;
     text-dy: 10;
     text-face-name: @book-fonts;
@@ -1681,7 +1681,7 @@
 
   [feature = 'amenity_taxi'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: #0066ff;
     text-dy: 11;
     text-face-name: @book-fonts;
@@ -1696,7 +1696,7 @@
   [feature = 'amenity_bus_station'] {
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: 18;
       text-fill: @transportation-text;
       text-dy: 11;
       text-face-name: @book-fonts;
@@ -1734,7 +1734,7 @@
 
   [feature = 'amenity_fountain'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: @marina-text;
     text-dy: 4;
     text-face-name: @book-fonts;
@@ -1750,7 +1750,7 @@
 
   [feature = 'amenity_prison'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-fill: @amenity-brown;
     text-dy: 12;
     text-face-name: @book-fonts;
@@ -1763,7 +1763,7 @@
 
   [feature = 'man_made_lighthouse'][zoom >= 15] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: @transportation-text;
     text-dy: 16;
     text-face-name: @book-fonts;
@@ -1776,7 +1776,7 @@
   [feature = 'man_made_windmill'][zoom >= 17],
   [feature = 'amenity_recycling'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: @amenity-brown;
     text-dy: 12;
     [feature = 'amenity_recycling'] { text-dy: 10; }
@@ -1790,7 +1790,7 @@
   [feature = 'amenity_hospital'][zoom >= 16] {
     text-name: "[name]";
     text-fill: @health-color;
-    text-size: 8;
+    text-size: 16;
     text-dy: 10;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -1807,7 +1807,7 @@
   [feature = 'amenity_veterinary'] {
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: 16;
       text-dy: 12;
       text-fill: @health-color;
       text-face-name: @book-fonts;
@@ -1876,7 +1876,7 @@
   [feature = 'shop_other']{
     [zoom >= 17] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 20;
       text-dy: 12;
       text-fill: @shop-text;
       text-face-name: @book-fonts;
@@ -1894,7 +1894,7 @@
   [feature = 'shop_department_store'] {
     [zoom >= 16] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 20;
       text-dy: 12;
       text-fill: @shop-text;
       text-face-name: @book-fonts;
@@ -1907,7 +1907,7 @@
 
   [feature = 'aeroway_gate'][zoom >= 17] {
     text-name: "[ref]";
-    text-size: 10;
+    text-size: 20;
     text-fill: #aa66cc;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -2044,7 +2044,7 @@
 
   [feature = 'aeroway_helipad'][zoom >= 16] {
     text-name: "[name]";
-    text-size: 8;
+    text-size: 16;
     text-fill: @airtransport;
     text-dy: -10;
     text-face-name: @bold-fonts;
@@ -2056,7 +2056,7 @@
 
   [feature = 'aeroway_aerodrome'][zoom >= 10][zoom < 14] {
     text-name: "[name]";
-    text-size: 8;
+    text-size: 16;
     text-fill: darken(@airtransport, 15%);
     text-dy: -10;
     text-face-name: @oblique-fonts;
@@ -2068,7 +2068,7 @@
 
   [feature = 'amenity_hunting_stand'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 20;
     text-dy: 11;
     text-fill: @man-made-icon;
     text-face-name: @book-fonts;
@@ -2080,7 +2080,7 @@
 
   [feature = 'natural_tree'][zoom >= 17] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 18;
     text-fill: green;
     text-dy: 7;
     [zoom >= 18] { text-dy: 8; }

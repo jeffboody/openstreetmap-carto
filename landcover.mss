@@ -673,7 +673,7 @@
     text-halo-radius: 1;
     text-halo-fill: rgba(255,255,255,0.6);
     text-fill: #999;
-    text-size: 10;
+    text-size: 20;
     text-face-name: @book-fonts;
     text-placement: line;
     text-dy: 8;

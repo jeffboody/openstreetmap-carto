@@ -21,7 +21,7 @@
     [zoom >= 14] {
       text-name: "[name]";
       text-face-name: @bold-fonts;
-      text-size: 9;
+      text-size: 18;
       text-fill: @station-text;
       text-dy: 8;
       text-halo-radius: 1.5;
@@ -31,7 +31,7 @@
     }
     [zoom >= 15] {
       marker-width: 9;
-      text-size: 11;
+      text-size: 22;
       text-dy: 10;
     }
   }
@@ -50,7 +50,7 @@
     [zoom >= 15] {
       text-name: "[name]";
       text-face-name: @bold-fonts;
-      text-size: 9;
+      text-size: 18;
       text-fill: @station-text;
       text-dy: 9;
       text-halo-radius: 1.5;
@@ -74,7 +74,7 @@
     [zoom >= 14] {
       text-name: "[name]";
       text-face-name: @book-fonts;
-      text-size: 8;
+      text-size: 16;
       text-fill: @station-text;
       text-dy: 8;
       text-halo-radius: 1.5;
@@ -82,7 +82,7 @@
       text-wrap-width: 0;
       text-placement: interior;
       [zoom >= 15] {
-        text-size: 10;
+        text-size: 22;
         text-dy: 10;
       }
     }
@@ -102,7 +102,7 @@
     [zoom >= 16] {
       text-name: "[name]";
       text-face-name: @book-fonts;
-      text-size: 10;
+      text-size: 20;
       text-fill: @station-text;
       text-dy: 10;
       text-halo-radius: 1.5;
