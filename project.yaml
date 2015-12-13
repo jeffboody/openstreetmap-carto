@@ -1205,7 +1205,7 @@ Layer:
             admin_level
           FROM planet_osm_roads
           WHERE boundary = 'administrative'
-            AND admin_level IN ('0', '1', '2', '3', '4', '5', '6', '7', '8')
+            AND admin_level IN ('0', '1', '2', '3', '4')
             AND osm_id < 0
           ORDER BY admin_level DESC
         ) AS admin_mid_zoom
@@ -1226,7 +1226,7 @@ Layer:
             admin_level
           FROM planet_osm_roads
           WHERE boundary = 'administrative'
-            AND admin_level IN ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
+            AND admin_level IN ('0', '1', '2', '3', '4')
             AND osm_id < 0
           ORDER BY admin_level::integer DESC -- With 10 as a valid value, we need to do a numeric ordering, not a text ordering
         ) AS admin_high_zoom
@@ -2327,7 +2327,7 @@ Layer:
           ORDER BY admin_level::integer ASC, way_area DESC
         ) AS admin_text
     properties:
-      minzoom: 16
+      minzoom: 17
     advanced: {}
   - id: "nature-reserve-text"
     name: "nature-reserve-text"
