@@ -1,11 +1,11 @@
 /* For the main linear features, such as roads and railways. */
 
 //road colors for major roads were generated with scripts/generate_road_colors.py
-@motorway-fill: #e892a2; // Lch(70,35,10), error 0.5
-@trunk-fill: #f9b29c; // Lch(79,33,42), error 0.7
-@primary-fill: #fcd6a4; // Lch(88,31,74), error 1.7
-@secondary-fill: #f7fabf; // Lch(97,29,106), error 1.7
-@tertiary-fill: #ffffff;
+@motorway-fill: #ffa023;
+@trunk-fill: #f0b923;
+@primary-fill: #f0b923;
+@secondary-fill: #f4f450;
+@tertiary-fill: #f8f880;
 @residential-fill: #ffffff;
 @service-fill: @residential-fill;
 @living-street-fill: #ededed;
@@ -22,16 +22,16 @@
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
 
-@motorway-low-zoom: #e66e89; // Lch(62,50,10), error 0.7
-@trunk-low-zoom: #fa9476; // Lch(72,50,42), error 0.8
-@primary-low-zoom: #f8c171; // Lch(82,50,74), error 2.1
-@secondary-low-zoom: #e6ef89; // Lch(92,50,106), error 2.2
+@motorway-low-zoom: @motorway-fill;
+@trunk-low-zoom: @trunk-fill;
+@primary-low-zoom: @primary-fill;
+@secondary-low-zoom: @secondary-fill;
 
 @default-casing: white;
-@motorway-casing: #dc2a67; // Lch(50,70,10), error 1.1
-@trunk-casing: #c84e2f; // Lch(50,65,42), error 0.7
-@primary-casing: #a06b00; // Lch(50,60,74), error 1.6
-@secondary-casing: #707d05; // Lch(50,55,106), error 1.9
+@motorway-casing: darken(@motorway-fill, 50%);
+@trunk-casing: darken(@trunk-fill, 50%);
+@primary-casing: darken(@primary-fill, 50%);
+@secondary-casing: darken(@secondary-fill, 50%);
 @tertiary-casing: #8f8f8f;
 @residential-casing: #bbb;
 @road-casing: @residential-casing;
@@ -45,10 +45,10 @@
 @bridleway-casing: @default-casing;
 @track-casing: @default-casing;
 
-@motorway-low-zoom-casing: #c24e6b; // Lch(50,50,10), error 0.8
-@trunk-low-zoom-casing: #cf6649; // Lch(56,55,42), error 0.9
-@primary-low-zoom-casing: #c38a27; // Lch(62,60,74), error 2.1
-@secondary-low-zoom-casing: #9eae23; // Lch(68,65,106), error 2.3
+@motorway-low-zoom-casing: darken(@motorway-low-zoom, 50%);
+@trunk-low-zoom-casing: darken(@trunk-low-zoom, 50%);
+@primary-low-zoom-casing: darken(@primary-low-zoom, 50%);
+@secondary-low-zoom-casing: darken(@secondary-low-zoom, 50%);
 
 @unimportant-road: @residential-casing;
 
