@@ -951,27 +951,6 @@
     marker-fill: @transportation-icon;
   }
 
-  [feature = 'natural_peak'][zoom >= 11] {
-    marker-file: url('symbols/peak.svg');
-    marker-fill: @landform-color;
-    marker-placement: interior;
-    marker-clip: false;
-  }
-
-  [feature = 'natural_volcano'][zoom >= 11] {
-    marker-file: url('symbols/peak.svg');
-    marker-fill: #d40000;
-    marker-placement: interior;
-    marker-clip: false;
-  }
-
-  [feature = 'natural_saddle'][zoom >= 15] {
-    marker-file: url('symbols/saddle.svg');
-    marker-fill: @landform-color;
-    marker-placement: interior;
-    marker-clip: false;
-  }
-
   [feature = 'natural_cave_entrance'][zoom >= 15] {
     point-file: url('symbols/poi_cave.p.16.png');
     point-placement: interior;
@@ -1245,8 +1224,6 @@
     text-size: 20;
     text-fill: darken(@landform-color, 30%);
     [feature = 'natural_volcano'] { text-fill: #d40000; }
-    text-dy: 7;
-    [feature = 'tourism_viewpoint'] { text-dy: 11; }
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-halo-fill: rgba(255,255,255,0.6);
