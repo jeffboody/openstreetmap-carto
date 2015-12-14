@@ -6,5 +6,5 @@ Map {
 @bold-fonts:    "Go Long Regular";
 @oblique-fonts: "Go Long Regular";
 
-@water-color: #b5d0d0;
+@water-color: #4788d9;
 @land-color: #f2efe9;
