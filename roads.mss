@@ -277,19 +277,19 @@
 @track-oneway-arrow-color:        darken(@track-fill, 15%);
 @bridleway-oneway-arrow-color:    darken(@track-fill, 10%);
 
-@shield-size: 9;
-@shield-size-z16: 10;
-@shield-size-z18: 11;
+@shield-size: 16;
+@shield-size-z16: 18;
+@shield-size-z18: 20;
 @shield-spacing: 760;
-@shield-min-distance: 40;
+@shield-min-distance: 80;
 @shield-font: @book-fonts;
 @shield-clip: false;
 
-@shield-motorway-fill: #620728; // Lch(20,40,10), error 0.5
-@shield-trunk-fill: #5d1b0b; // Lch(21,40,42), error 0.5
-@shield-primary-fill: #4c2e00; // Lch(22,40,74), error 2.9
-@shield-secondary-fill: #323b00; // Lch(23,40,106), error 3.4
-@shield-tertiary-fill: #3b3b3b; // Lch(25,0,0), error 0.1
+@shield-motorway-fill: #000000;
+@shield-trunk-fill: #000000;
+@shield-primary-fill: #000000;
+@shield-secondary-fill: #000000;
+@shield-tertiary-fill: #000000;
 
 .roads-casing, .bridges-casing, .tunnels-casing {
   ::casing {
