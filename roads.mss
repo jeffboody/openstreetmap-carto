@@ -28,12 +28,12 @@
 @secondary-low-zoom: @secondary-fill;
 
 @default-casing: white;
-@motorway-casing: darken(@motorway-fill, 50%);
-@trunk-casing: darken(@trunk-fill, 50%);
-@primary-casing: darken(@primary-fill, 50%);
-@secondary-casing: darken(@secondary-fill, 50%);
-@tertiary-casing: #8f8f8f;
-@residential-casing: #bbb;
+@motorway-casing: #1f1404;
+@trunk-casing: #1f1404;
+@primary-casing: #1f1404;
+@secondary-casing: #1f1404;
+@tertiary-casing:  #1f1404;
+@residential-casing: #222;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
@@ -50,7 +50,7 @@
 @primary-low-zoom-casing: darken(@primary-low-zoom, 50%);
 @secondary-low-zoom-casing: darken(@secondary-low-zoom, 50%);
 
-@unimportant-road: @residential-casing;
+@unimportant-road: #bbb;
 
 @residential-construction: #aaa;
 @service-construction: #aaa;
