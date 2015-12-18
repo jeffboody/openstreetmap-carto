@@ -4,7 +4,7 @@
 @shop-text: #939;
 @transportation-icon: #0092da;
 @transportation-text: #0066ff;
-@airtransport: #8461C4;
+@airtransport: #112260;
 @health-color: #da0092;
 @amenity-brown: #734a08;
 @man-made-icon: #555;
@@ -928,20 +928,6 @@
   [feature = 'leisure_slipway'][zoom >= 17] {
     point-file: url('symbols/transport_slipway.p.20.png');
     point-placement: interior;
-  }
-
-  [feature = 'aeroway_helipad'][zoom >= 16] {
-    marker-file: url('symbols/helipad.svg');
-    marker-placement: interior;
-    marker-clip: false;
-    marker-fill: @airtransport;
-  }
-
-  [feature = 'aeroway_aerodrome'][zoom >= 10][zoom < 14] {
-    marker-file: url('symbols/aerodrome.svg');
-    marker-placement: interior;
-    marker-clip: false;
-    marker-fill: @airtransport;
   }
 
   [feature = 'man_made_lighthouse'][zoom >= 15] {
@@ -2023,7 +2009,6 @@
     text-name: "[name]";
     text-size: 16;
     text-fill: @airtransport;
-    text-dy: -10;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
     text-halo-fill: rgba(255,255,255,0.6);
@@ -2031,11 +2016,10 @@
     text-wrap-width: @standard-wrap-width;
   }
 
-  [feature = 'aeroway_aerodrome'][zoom >= 10][zoom < 14] {
+  [feature = 'aeroway_aerodrome'][zoom >= 12][zoom < 15] {
     text-name: "[name]";
     text-size: 16;
-    text-fill: darken(@airtransport, 15%);
-    text-dy: -10;
+    text-fill: @airtransport;
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
     text-halo-fill: rgba(255,255,255,0.6);
