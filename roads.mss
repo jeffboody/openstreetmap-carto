@@ -12,9 +12,9 @@
 @pedestrian-fill: #dddde8;
 @raceway-fill: pink;
 @road-fill: #ddd;
-@footway-fill: salmon;
+@footway-fill: green;
 @steps-fill: @footway-fill;
-@cycleway-fill: blue;
+@cycleway-fill: green;
 @bridleway-fill: green;
 @track-fill: #996600;
 @aeroway-fill: #bbc;
@@ -111,14 +111,14 @@
 @residential-width-z13:           2.5;
 @living-street-width-z13:         2;
 @pedestrian-width-z13:            2;
-@bridleway-width-z13:             0.3;
-@footway-width-z13:               0.7;
-@cycleway-width-z13:              0.7;
+@bridleway-width-z13:             0.6;
+@footway-width-z13:               0.6;
+@cycleway-width-z13:              0.6;
 @path-width-z13:                  0.2;
-@track-width-z13:                 0.5;
-@track-grade1-width-z13:          0.5;
-@track-grade2-width-z13:          0.5;
-@steps-width-z13:                 0.7;
+@track-width-z13:                 0.6;
+@track-grade1-width-z13:          0.6;
+@track-grade2-width-z13:          0.6;
+@steps-width-z13:                 0.6;
 
 @secondary-width-z14:             5;
 @tertiary-width-z14:              5;
@@ -137,14 +137,14 @@
 @residential-width-z15:           5;
 @living-street-width-z15:         5;
 @pedestrian-width-z15:            5;
-@bridleway-width-z15:             1.2;
-@footway-width-z15:               1;
-@cycleway-width-z15:              0.9;
+@bridleway-width-z15:             2;
+@footway-width-z15:               2;
+@cycleway-width-z15:              2;
 @path-width-z15:                  0.5;
-@track-width-z15:                 1.5;
-@track-grade1-width-z15:          0.75;
-@track-grade2-width-z15:          0.75;
-@steps-width-z15:                 3;
+@track-width-z15:                 2;
+@track-grade1-width-z15:          2;
+@track-grade2-width-z15:          2;
+@steps-width-z15:                 2;
 
 @secondary-width-z16:            10;
 @tertiary-width-z16:             10;
@@ -154,8 +154,8 @@
 @road-width-z16:                  3.5;
 @service-width-z16:               3.5;
 @minor-service-width-z16:         2;
-@footway-width-z16:               1.3;
-@cycleway-width-z16:              0.9;
+@footway-width-z16:               2.6;
+@cycleway-width-z16:              2.6;
 
 @motorway-width-z17:             18;
 @motorway-link-width-z17:        12;
@@ -196,11 +196,11 @@
 @service-width-z19:              11;
 @minor-service-width-z19:         5.5;
 
-@footway-width-z18:               1.3;
-@cycleway-width-z18:              1;
+@footway-width-z18:               2.6;
+@cycleway-width-z18:              2.6;
 
-@footway-width-z19:               1.6;
-@cycleway-width-z19:              1.3;
+@footway-width-z19:               3.2;
+@cycleway-width-z19:              3.2;
 
 
 @major-casing-width-z11:          0.3;
