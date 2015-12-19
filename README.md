@@ -1,3 +1,9 @@
+# Notice
+
+This fork of OpenStreetMap Carto is designed as a map overlay layer for high DPI screens.
+
+Send questions or comments to Jeff Boody - jeffboody@gmail.com
+
 # OpenStreetMap Carto
 
 ![screenshot](https://raw.github.com/gravitystorm/openstreetmap-carto/master/preview.png)
