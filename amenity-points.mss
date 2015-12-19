@@ -1208,7 +1208,7 @@
   [feature = 'tourism_viewpoint'][zoom >= 16] {
     text-name: "[name]";
     text-size: 20;
-    text-fill: darken(@landform-color, 30%);
+    text-fill: #c03020;
     [feature = 'natural_volcano'] { text-fill: #d40000; }
     text-face-name: @book-fonts;
     text-halo-radius: 1;
