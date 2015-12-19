@@ -180,6 +180,7 @@ overlapping borders correctly.
   text-name: "[name]";
   text-face-name: @book-fonts;
   text-fill: green;
+  text-size: @landcover-font-size;
   text-halo-radius: 1.0;
   text-halo-fill: rgba(255,255,255,0.6);
   text-placement: line;

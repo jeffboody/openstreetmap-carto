@@ -1358,7 +1358,7 @@
       }
       [feature = 'boundary_national_park'],
       [feature = 'leisure_nature_reserve'] {
-        text-fill: darken(@park, 70%);
+        text-fill: @forest-text;
       }
     }
   }
