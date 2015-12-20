@@ -27,8 +27,10 @@
 
 #define SHIELD_WBORDER 4.0f
 #define SHIELD_WIDTH   8.0f
+#define SHIELD_WSTEP   1.0f
 #define SHIELD_HBORDER 4.0f
 #define SHIELD_HEIGHT  15.0f
+#define SHIELD_HSTEP   1.0f
 #define SHIELD_COUNT   5
 
 typedef struct
@@ -67,6 +69,7 @@ int main(int argc, const char** argv)
 		{
 			for(rows = 1; rows < 5; ++rows)
 			{
+				// default shield
 				char name[256];
 				snprintf(name, 256, "symbols/shields/%s_%ix%i.svg",
 				         shields[i].type, cols, rows);
@@ -80,6 +83,38 @@ int main(int argc, const char** argv)
 				export(f,
 				       2.0f*SHIELD_WBORDER + cols*SHIELD_WIDTH,
 				       2.0f*SHIELD_HBORDER + rows*SHIELD_HEIGHT,
+				       shields[i].fg, shields[i].bg);
+				fclose(f);
+
+				// z16 shield
+				snprintf(name, 256, "symbols/shields/%s_%ix%i_z16.svg",
+				         shields[i].type, cols, rows);
+				f = fopen(name, "w");
+				if(f == NULL)
+				{
+					printf("fopen %s failed", name);
+					return EXIT_FAILURE;
+				}
+
+				export(f,
+				       2.0f*SHIELD_WBORDER + cols*(SHIELD_WSTEP + SHIELD_WIDTH),
+				       2.0f*SHIELD_HBORDER + rows*(SHIELD_HSTEP + SHIELD_HEIGHT),
+				       shields[i].fg, shields[i].bg);
+				fclose(f);
+
+				// z18 shield
+				snprintf(name, 256, "symbols/shields/%s_%ix%i_z18.svg",
+				         shields[i].type, cols, rows);
+				f = fopen(name, "w");
+				if(f == NULL)
+				{
+					printf("fopen %s failed", name);
+					return EXIT_FAILURE;
+				}
+
+				export(f,
+				       2.0f*SHIELD_WBORDER + cols*(2.0f*SHIELD_WSTEP + SHIELD_WIDTH),
+				       2.0f*SHIELD_HBORDER + rows*(2.0f*SHIELD_HSTEP + SHIELD_HEIGHT),
 				       shields[i].fg, shields[i].bg);
 				fclose(f);
 			}
