@@ -2139,7 +2139,7 @@ Layer:
                 CASE
                   WHEN "natural" IN ('peak', 'volcano', 'saddle') OR tourism = 'alpine_hut' OR amenity = 'shelter' THEN
                     CASE
-                      WHEN ele ~ '^-?\d{1,4}(\.\d+)?$' THEN ele::NUMERIC
+                      WHEN ele ~ '^-?\d{1,5}(\.\d+)?$' THEN ele::NUMERIC
                       ELSE NULL
                     END
                   ELSE NULL
