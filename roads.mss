@@ -4,8 +4,8 @@
 @motorway-fill: #ffa023;
 @trunk-fill: #f0b923;
 @primary-fill: #f0b923;
-@secondary-fill: #f4f450;
-@tertiary-fill: #f8f880;
+@secondary-fill: #e8ea2f;
+@tertiary-fill: #fdffa0;
 @residential-fill: #ffffff;
 @service-fill: @residential-fill;
 @living-street-fill: #ededed;
