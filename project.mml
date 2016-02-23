@@ -528,32 +528,6 @@
       "advanced": {}
     },
     {
-      "name": "cliffs",
-      "srs-name": "900913",
-      "geometry": "linestring",
-      "class": "",
-      "id": "cliffs",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "Datasource": {
-        "extent": "-20037508,-20037508,20037508,20037508",
-        "table": "(SELECT\n    way, \"natural\", man_made\n  FROM planet_osm_line\n  WHERE \"natural\" = 'cliff' OR man_made = 'embankment'\n) AS cliffs",
-        "geometry_field": "way",
-        "type": "postgis",
-        "key_field": "",
-        "dbname": "gis"
-      },
-      "extent": [
-        -180,
-        -85.05112877980659,
-        180,
-        85.05112877980659
-      ],
-      "properties": {
-        "minzoom": 13
-      },
-      "advanced": {}
-    },
-    {
       "name": "area-barriers",
       "srs-name": "900913",
       "geometry": "polygon",

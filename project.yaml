@@ -497,22 +497,6 @@ Layer:
     properties:
       minzoom: 16
     advanced: {}
-  - id: "cliffs"
-    name: "cliffs"
-    class: ""
-    geometry: "linestring"
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, "natural", man_made
-          FROM planet_osm_line
-          WHERE "natural" = 'cliff' OR man_made = 'embankment'
-        ) AS cliffs
-    properties:
-      minzoom: 13
-    advanced: {}
   - id: "area-barriers"
     name: "area-barriers"
     class: "barriers"
