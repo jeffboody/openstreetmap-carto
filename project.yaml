@@ -2223,27 +2223,6 @@ Layer:
     properties:
       minzoom: 13
     advanced: {}
-  - id: "admin-text"
-    name: "admin-text"
-    class: ""
-    geometry: "linestring"
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way,
-            name,
-            admin_level
-          FROM planet_osm_polygon
-          WHERE boundary = 'administrative'
-            AND admin_level IN ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
-            AND name IS NOT NULL
-          ORDER BY admin_level::integer ASC, way_area DESC
-        ) AS admin_text
-    properties:
-      minzoom: 17
-    advanced: {}
   - id: "nature-reserve-text"
     name: "nature-reserve-text"
     class: ""

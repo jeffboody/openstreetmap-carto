@@ -1,12 +1,12 @@
-@marina-text: #576ddf; // also swimming_pool
-@wetland-text: darken(#4aa5fa, 25%); /* Also for marsh and mud */
 @shop-icon: #ac39ac;
 @shop-text: #939;
-@transportation-icon: #0092da;
+@marina-text: #112260; // also swimming_pool
+@wetland-text: #112260; /* Also for marsh and mud */
+@transportation-icon: #0066ff;
 @transportation-text: #0066ff;
-@airtransport: #112260;
-@health-color: #da0092;
 @amenity-brown: #734a08;
+@airtransport: #0066ff;
+@health-color: #c22218;
 @man-made-icon: #555;
 @landform-color: #d08f55;
 
@@ -1159,7 +1159,7 @@
     text-wrap-width: @standard-wrap-width;
     text-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
-      text-fill: #66ccaf;
+      text-fill: #444;
     }
     [feature = 'amenity_bicycle_parking'],
     [feature = 'amenity_motorcycle_parking'] {
