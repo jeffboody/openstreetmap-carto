@@ -1,5 +1,5 @@
 @water-text: #112260;
-@glacier: #ddecec;
+@glacier: #9bdfe0;
 @glacier-line: #9cf;
 
 #water-areas {
@@ -15,6 +15,7 @@
         line-dasharray: 4,2;
         line-width: 1.5;
       }
+      opacity: 0.33;
     }
   }
 
